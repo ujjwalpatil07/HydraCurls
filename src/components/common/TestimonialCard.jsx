@@ -2,7 +2,7 @@ import {
      Star,
 } from 'lucide-react'
 
-import avatar from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749100/before-after-hair_rfrhgm.png'
+import { cloudinaryAssets } from '../../config/cloudinary.js'
 
 function TestimonialCard({
      name = 'Aisha K',
@@ -88,7 +88,7 @@ function TestimonialCard({
                "
                >
                     <img
-                         src={avatar}
+                         src={cloudinaryAssets.avatar}
                          alt={name}
                          className="
                               h-[46px]

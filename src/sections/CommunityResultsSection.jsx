@@ -1,8 +1,9 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { ChevronUp, ChevronDown } from 'lucide-react'
-
-import beforeAfterHair from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749100/before-after-hair_rfrhgm.png'
 import TestimonialCard from '../components/common/TestimonialCard'
+
+import { cloudinaryAssets } from '../config/cloudinary'
+
 
 const testimonials = [
      {
@@ -189,7 +190,7 @@ function CommunityResultsSection() {
                               "
                          >
                               <img
-                                   src={beforeAfterHair}
+                                   src={cloudinaryAssets.beforeAfterHair}
                                    alt="Hydra Curls community hair results"
                                    loading="lazy"
                                    className="

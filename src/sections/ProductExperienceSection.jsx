@@ -1,43 +1,39 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { motion, useReducedMotion } from 'framer-motion'
 
-import shampoo from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749109/shampoo_qtdk53.png'
-import conditioner from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749099/conditioner_sricpq.png'
-import cream from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749100/cream_kuy5po.png'
-import gel from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749103/gel_jzt5tt.png'
-import mask from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749108/mask_sdemvm.png'
+import { cloudinaryAssets } from '../config/cloudinary.js'
 
 const products = [
      {
           id: 'shampoo',
-          image: shampoo,
+          image: cloudinaryAssets.shampoo,
           name: 'Hydrating Shampoo',
-          alt: 'HydraCurls Hydrating Shampoo'
+          alt: 'HydraCurls Hydrating Shampoo',
      },
      {
           id: 'conditioner',
-          image: conditioner,
+          image: cloudinaryAssets.conditioner,
           name: 'Hydrating Conditioner',
-          alt: 'HydraCurls Hydrating Conditioner'
+          alt: 'HydraCurls Hydrating Conditioner',
      },
      {
           id: 'cream',
-          image: cream,
+          image: cloudinaryAssets.cream,
           name: 'Defining Cream',
-          alt: 'HydraCurls Defining Cream'
+          alt: 'HydraCurls Defining Cream',
      },
      {
           id: 'gel',
-          image: gel,
+          image: cloudinaryAssets.gel,
           name: 'Defining Gel',
-          alt: 'HydraCurls Defining Gel'
+          alt: 'HydraCurls Defining Gel',
      },
      {
           id: 'mask',
-          image: mask,
+          image: cloudinaryAssets.mask,
           name: 'Hydrating Mask',
-          alt: 'HydraCurls Hydrating Mask'
-     }
+          alt: 'HydraCurls Hydrating Mask',
+     },
 ]
 
 function ProductExperienceSection() {

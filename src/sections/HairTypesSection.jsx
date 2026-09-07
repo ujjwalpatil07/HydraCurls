@@ -1,14 +1,12 @@
 import { motion, useReducedMotion } from 'framer-motion'
 
-import wavyHair from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749105/curly-woman-portrait_fj31i4.jpg'
-import curlyHair from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749102/curly-hair-type_sfxz87.jpg'
-import curlyWoman from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749102/curly-hair-turquoise-background_bbuxd8.jpg'
+import { cloudinaryAssets } from '../config/cloudinary.js'
 
 const hairTypes = [
      {
           type: 'Type 2',
           name: 'Wavy Hair',
-          image: wavyHair,
+          image: cloudinaryAssets.curlyWomanPortrait,
           description:
                'Loose waves with slight bend, can be fine to coarse texture',
           characteristics: [
@@ -20,7 +18,7 @@ const hairTypes = [
      {
           type: 'Type 3',
           name: 'Curly Hair',
-          image: curlyHair,
+          image: cloudinaryAssets.curlyHairType,
           description:
                'Defined curls with natural volume and a tendency toward dryness',
           characteristics: [
@@ -32,7 +30,7 @@ const hairTypes = [
      {
           type: 'Type 4',
           name: 'Coily Hair',
-          image: curlyWoman,
+          image: cloudinaryAssets.curlyHairTurquoise,
           description:
                'Tightly coiled strands that need intensive moisture and gentle care',
           characteristics: [

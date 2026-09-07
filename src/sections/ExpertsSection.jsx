@@ -1,22 +1,19 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import videoOne from 'https://res.cloudinary.com/dyahibuzy/video/upload/v1788749170/testimonial-good-hair-day_qnkls6.mp4'
-import videoTwo from 'https://res.cloudinary.com/dyahibuzy/video/upload/v1788749161/testimonial-fine-long-hair_r7liqz.mp4'
-import videoThree from 'https://res.cloudinary.com/dyahibuzy/video/upload/v1788749158/testimonial-curly-compliment_klodlm.mp4'
-import videoFour from 'https://res.cloudinary.com/dyahibuzy/video/upload/v1788749172/testimonial-good-wash-day_s41pgl.mp4'
+import { cloudinaryVideos } from '../config/cloudinary.js'
 
 /*
- * Reuse the existing four local testimonial videos
+ * Reuse the existing four Cloudinary testimonial videos
  * to maintain the 8-tile Figma mosaic rhythm.
  */
 const videos = [
-     videoOne,
-     videoTwo,
-     videoThree,
-     videoFour,
-     videoFour,
-     videoThree,
-     videoTwo,
-     videoOne,
+     cloudinaryVideos.testimonialGoodHair,
+     cloudinaryVideos.testimonialFineLong,
+     cloudinaryVideos.testimonialCompliment,
+     cloudinaryVideos.testimonialGoodWash,
+     cloudinaryVideos.testimonialGoodWash,
+     cloudinaryVideos.testimonialCompliment,
+     cloudinaryVideos.testimonialFineLong,
+     cloudinaryVideos.testimonialGoodHair,
 ]
 
 /*
@@ -376,7 +373,7 @@ function ExpertsSection() {
                                    textShadow: '0 5px 30px rgba(4,12,30,.35)',
                                    fontWeight: 700,
                               }}
-                              
+
                          >
                               Influencer Approved
                          </p>

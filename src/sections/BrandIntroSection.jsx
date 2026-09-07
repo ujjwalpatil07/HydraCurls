@@ -6,10 +6,12 @@ import {
      List,
 } from 'lucide-react'
 
-import logo2 from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749108/logo2_kj8g37.png'
-import shampoo from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749109/shampoo_qtdk53.png'
-import waterSplash from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749109/water-splash_oh11wh.png'
-import plant from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749109/pis-plant_icf8c6.png'
+import { cloudinaryAssets } from '../config/cloudinary'
+
+const logo2 = cloudinaryAssets.logo2
+const shampoo = cloudinaryAssets.shampoo
+const waterSplash = cloudinaryAssets.waterSplash
+const plant = cloudinaryAssets.plant
 
 const reveal = {
      hidden: {

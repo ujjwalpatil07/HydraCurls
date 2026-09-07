@@ -1,8 +1,13 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import Navbar from '../components/layout/Navbar'
 import WaveDivider from '../components/common/WaveDivider'
-import logo from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749107/logo1_qubwmz.png'
-import heroVideo from 'https://res.cloudinary.com/dyahibuzy/video/upload/v1788749176/hero-hydration-animation_qt331a.mp4'
+import {
+     cloudinaryAssets,
+     cloudinaryVideos,
+} from '../config/cloudinary'
+
+const logo = cloudinaryAssets.logo1
+const heroVideo = cloudinaryVideos.hero
 
 const reveal = { hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }
 

@@ -1,5 +1,4 @@
-import React from 'react'
-import clouds from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749099/clouds_mdmpag.png'
+import { cloudinaryAssets } from '../config/cloudinary'
 
 function ProductExperienceWrapper({ children }) {
      return (
@@ -30,7 +29,7 @@ function ProductExperienceWrapper({ children }) {
                         CLOUDS
                     ================================================== */}
                     <img
-                         src={clouds}
+                         src={cloudinaryAssets.clouds}
                          alt=""
                          loading="lazy"
                          className="

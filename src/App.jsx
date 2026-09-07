@@ -9,7 +9,7 @@ import ExpertsSection from './sections/ExpertsSection'
 import './App.css'
 import ProductExperienceWrapper from './components/ProductExperienceWrapper'
 import CommunityResultsSection from './sections/CommunityResultsSection'
-import beforeAfterImg from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749100/before-after-hair_rfrhgm.png'
+import { cloudinaryAssets } from './config/cloudinary'
 import HairTypesSection from './sections/HairTypesSection'
 import LearnGrowSection from './sections/LearnGrowSection'
 import RevolutionSection from './sections/RevolutionSection'
@@ -37,8 +37,8 @@ function App() {
                     <NatureSection /> 
 
                     <CommunityResultsSection
-                         beforeImage={beforeAfterImg}
-                         afterImage={beforeAfterImg}
+                         beforeImage={cloudinaryAssets.beforeAfterHair}
+                         afterImage={cloudinaryAssets.beforeAfterHair}
                     />
 
                     <ExpertsSection />

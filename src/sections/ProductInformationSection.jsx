@@ -1,18 +1,15 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import shampoo from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749109/shampoo_qtdk53.png'
-import conditioner from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749099/conditioner_sricpq.png'
-import cream from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749100/cream_kuy5po.png'
-import gel from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749103/gel_jzt5tt.png'
-import mask from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749108/mask_sdemvm.png'
-import backgroundPattern from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749101/background-pattern_mavuus.png'
+import { cloudinaryAssets } from '../config/cloudinary.js'
 
 const products = [
-     ['shampoo', shampoo, 'HydraCurls Hydrating Shampoo'],
-     ['conditioner', conditioner, 'HydraCurls Hydrating Conditioner'],
-     ['cream', cream, 'HydraCurls Defining Cream'],
-     ['gel', gel, 'HydraCurls Defining Gel'],
-     ['mask', mask, 'HydraCurls Hydrating Mask'],
+     ['shampoo', cloudinaryAssets.shampoo, 'HydraCurls Hydrating Shampoo'],
+     ['conditioner', cloudinaryAssets.conditioner, 'HydraCurls Hydrating Conditioner'],
+     ['cream', cloudinaryAssets.cream, 'HydraCurls Defining Cream'],
+     ['gel', cloudinaryAssets.gel, 'HydraCurls Defining Gel'],
+     ['mask', cloudinaryAssets.mask, 'HydraCurls Hydrating Mask'],
 ]
+
+const backgroundPattern = cloudinaryAssets.backgroundPattern
 
 function ProjectInformationSection() {
      const reduceMotion = useReducedMotion()

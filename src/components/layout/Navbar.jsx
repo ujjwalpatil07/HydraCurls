@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { useState } from 'react'
-import logo from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749107/logo1_qubwmz.png'
+import { cloudinaryAssets } from '../../config/cloudinary.js'
+
 
 const links = ['Home', 'Products', 'Hair Care Blog', 'Curly Girl Method']
 
@@ -32,7 +33,7 @@ function Navbar() {
                          style={{
                               width: 'clamp(88px,7.6vw,118px)'
                          }}
-                         src={logo}
+                         src={cloudinaryAssets.logo1}
                          alt="HydraCurls"
                     />
                </a>

@@ -1,11 +1,16 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import hyaluronicGif from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749104/hyaluronic-acid-icon_k1slvn.gif'
-import coconutGif from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749100/coconut-icon_boixyj.gif'
-import avocadoGif from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749098/avocado-icon_nmgga5.gif'
+import {
+     cloudinaryAssets,
+     cloudinaryVideos,
+} from '../config/cloudinary'
 
-import hyaluronicVideo from 'https://res.cloudinary.com/dyahibuzy/video/upload/v1788749177/ingredient-hyaluronic-acid_vuamfq.mp4'
-import coconutVideo from 'https://res.cloudinary.com/dyahibuzy/video/upload/v1788749166/ingredient-coconut-oil_dwyava.mp4'
-import avocadoVideo from 'https://res.cloudinary.com/dyahibuzy/video/upload/v1788749177/ingredient-avocado-extract_ds2wxj.mp4'
+const hyaluronicGif = cloudinaryAssets.hyaluronicIcon
+const coconutGif = cloudinaryAssets.coconutIcon
+const avocadoGif = cloudinaryAssets.avocadoIcon
+
+const hyaluronicVideo = cloudinaryVideos.ingredientHyaluronic
+const coconutVideo = cloudinaryVideos.ingredientCoconut
+const avocadoVideo = cloudinaryVideos.ingredientAvocado
 
 const ingredients = [
      {

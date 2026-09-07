@@ -1,23 +1,21 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { ArrowRight } from 'lucide-react'
 
-import firstImage from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749110/curly-hair-orange-background_mrpa10.jpg'
-import secondImage from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749113/curly-hair-pink-background_sk2iw2.jpg'
-import thirdImage from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749114/wavy-hair-type_dkvhng.jpg'
+import { cloudinaryAssets } from '../config/cloudinary'
 
 const guides = [
      {
-          image: firstImage,
+          image: cloudinaryAssets.curlyHairOrange,
           panelColor: '#5365BB',
           imageSide: 'left',
      },
      {
-          image: secondImage,
+          image: cloudinaryAssets.curlyHairPink,
           panelColor: '#76468A',
           imageSide: 'right',
      },
      {
-          image: thirdImage,
+          image: cloudinaryAssets.wavyHairType,
           panelColor: '#009ABA',
           imageSide: 'left',
      },

@@ -1,5 +1,6 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import campaignComposition from 'https://res.cloudinary.com/dyahibuzy/image/upload/v1788749108/campaign-composition_z12zyo.png'
+import { cloudinaryAssets } from '../config/cloudinary'
+
 
 function ProductShowcaseSection() {
      const reduceMotion = useReducedMotion()
@@ -19,7 +20,7 @@ function ProductShowcaseSection() {
 
                     <motion.img
                          className="block h-auto mx-auto max-w-full w-full object-contain"
-                         src={campaignComposition}
+                         src={cloudinaryAssets.campaignComposition}
                          alt="HydraCurls 48-hour hydration collection for Arab, curly, coily and wavy hair"
                          loading="lazy"
                          initial={reduceMotion ? false : { opacity: 0, y: 28, scale: .985 }}
