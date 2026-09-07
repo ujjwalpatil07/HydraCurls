@@ -1,0 +1,4 @@
+@import "tailwindcss";
+
+:root { --font-ui:'Gontham','Avenir Next',Arial,sans-serif; --font-display:'Kaushan Script','Segoe Script',cursive; color:#040c1e; font-synthesis:none; text-rendering:optimizeLegibility; }
+* { box-sizing:border-box; }
